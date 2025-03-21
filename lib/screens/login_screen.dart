@@ -88,24 +88,27 @@ class _LoginScreenState extends State<LoginScreen> {
                       onPressed: () => Navigator.pushNamed(context, '/register'),
                     ),
                     const SizedBox(height: 20),
-                    const Text.rich(
-                      TextSpan(
-                        text: 'Utilice La ',
-                        style: TextStyle(fontSize: 14, color: Colors.black87),
-                        children: [
-                          TextSpan(
-                            text: 'Huella Digital',
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                              color: Colors.blue,
+                    GestureDetector(
+                      onTap: () => Navigator.pushNamed(context, '/fingerprint'),
+                      child: const Text.rich(
+                        TextSpan(
+                          text: 'Utilice La ',
+                          style: TextStyle(fontSize: 14, color: Colors.black87),
+                          children: [
+                            TextSpan(
+                              text: 'Huella Digital',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.blue,
+                              ),
                             ),
-                          ),
-                          TextSpan(
-                            text: ' Para Acceder',
-                          ),
-                        ],
+                            TextSpan(
+                              text: ' Para Acceder',
+                            ),
+                          ],
+                        ),
+                        textAlign: TextAlign.center,
                       ),
-                      textAlign: TextAlign.center,
                     ),
                     const SizedBox(height: 8),
                     const Text(

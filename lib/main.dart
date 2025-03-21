@@ -12,6 +12,8 @@ import 'screens/notifications_screen.dart';
 import 'screens/installation_status_screen.dart';
 import 'screens/reports_screen.dart';
 import 'screens/profile_screen.dart';
+import 'screens/success_screen.dart';
+import 'screens/fingerprint_auth_screen.dart';
 import 'theme/app_theme.dart';
 
 void main() {
@@ -32,8 +34,8 @@ class MyApp extends StatelessWidget {
         '/login': (context) => const LoginScreen(),
         '/register': (context) => const RegisterScreen(),
         '/launch': (context) => const LaunchScreen(),
-        '/forgot-password': (context) => const ForgotPasswordScreen(),
-        '/security-pin': (context) => const SecurityPinScreen(),
+        '/forgot-password': (context) => ForgotPasswordScreen(),
+        '/security-pin': (context) => SecurityPinScreen(),
         '/new-password': (context) => const NewPasswordScreen(),
         '/security-fingerprint': (context) => const SecurityFingerprintScreen(),
         '/home': (context) => const HomeScreen(),
@@ -41,6 +43,8 @@ class MyApp extends StatelessWidget {
         '/installation-status': (context) => const InstallationStatusScreen(),
         '/reports': (context) => const ReportsScreen(),
         '/profile': (context) => const ProfileScreen(),
+        '/success': (context) => const SuccessScreen(),
+        '/fingerprint': (context) => const FingerprintAuthScreen(),
       },
     );
   }
